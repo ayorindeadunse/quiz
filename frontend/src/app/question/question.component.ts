@@ -1,3 +1,4 @@
+import { ApiService } from './../api.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./question.component.css'],
 })
 export class QuestionComponent {
-  constructor() {}
+  question = {};
+  constructor(private api: ApiService) {}
+
+  post(question) {
+    // console.log(question);
+    this.api.postQuestion(question);
+  }
 }

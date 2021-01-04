@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{E4034190-DFE5-4D88-BCFE-DC3AAFFB4C82}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Question.cs">
+    <Files>
+      <File FileName="Controllers/QuestionsController.cs" Line="25" Column="27" />
+      <File FileName="Controllers/WeatherForecastController.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Program.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="WeatherForecast.cs" />
+      <File FileName="Models/Question.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="quiz-backend" expanded="True">
+            <Node name="quiz-backend" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Question.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.quiz-backend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

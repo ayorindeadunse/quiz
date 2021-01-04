@@ -8,12 +8,28 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace quiz_backend.Controllers
 {
-    public class HomeController : Controller
+    /* public class QuestionsController : Controller
+     {
+         // GET: /<controller>/
+         public IActionResult Index()
+         {
+             return View();
+         }
+     }*/
+
+
+    /*[Produces("application/json")]
+     [Route("api/Questions")]*/
+    [Produces("application/json")]
+    [ApiController]
+    [Route("api/Questions")]
+
+    public class QuestionsController : Controller
     {
-        // GET: /<controller>/
-        public IActionResult Index()
+        [HttpPost]
+        public void Post([FromBody]Models.Question question)
         {
-            return View();
+            
         }
     }
 }
