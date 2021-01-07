@@ -1,5 +1,6 @@
 import { ApiService } from './../api.service';
 import { Component } from '@angular/core';
+import { identifierModuleUrl } from '@angular/compiler';
 
 @Component({
   selector: 'question',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./question.component.css'],
 })
 export class QuestionComponent {
-  question = {};
+  question = { Text };
   constructor(private api: ApiService) {}
 
   post(question) {

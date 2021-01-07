@@ -26,10 +26,28 @@ namespace quiz_backend.Controllers
 
     public class QuestionsController : Controller
     {
+        // create local context
+        readonly QuizContext context;
+        public QuestionsController(QuizContext context)
+        {
+            this.context = context;
+        }
         [HttpPost]
         public void Post([FromBody]Models.Question question)
         {
-            
+            context.Questions.Add(new Models.Question() {Text = question.Text});
+            context.SaveChanges();
+        }
+
+        [HttpGet]
+        public IEnumerable<Models.Question> Get()
+        {
+            return new Models.Question[]
+            {
+                new Models.Question() {Text = "hello"},
+                new Models.Question() { Text = "hi"}
+                
+            };
         }
     }
 }
