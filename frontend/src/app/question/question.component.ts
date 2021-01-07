@@ -8,7 +8,14 @@ import { identifierModuleUrl } from '@angular/compiler';
   styleUrls: ['./question.component.css'],
 })
 export class QuestionComponent {
-  question = { Text };
+  question = {
+    Text: '',
+    correctAnswer: '',
+    answer1: '',
+    answer2: '',
+    answer3: '',
+  };
+
   constructor(private api: ApiService) {}
 
   post(question) {

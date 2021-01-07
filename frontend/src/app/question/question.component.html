@@ -1,12 +1,51 @@
 <mat-card>
   <mat-card-content>
     <form>
-      <mat-form-field>
+      <mat-form-field class="fullwidth">
         <input
           [(ngModel)]="question.Text"
           matInput
           placeholder="Question"
           name="question"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="fullwidth">
+        <input
+          [(ngModel)]="question.correctAnswer"
+          matInput
+          placeholder="Correct Answer"
+          name="correctAnswer"
+        />
+      </mat-form-field>
+
+      <br />
+      <mat-form-field class="fullwidth">
+        <input
+          [(ngModel)]="question.answer1"
+          matInput
+          placeholder="Wrong Answer"
+          name="answer1"
+        />
+      </mat-form-field>
+
+      <br />
+      <mat-form-field class="fullwidth">
+        <input
+          [(ngModel)]="question.answer2"
+          matInput
+          placeholder="Wrong Answer"
+          name="answer2"
+        />
+      </mat-form-field>
+
+      <br />
+      <mat-form-field class="fullwidth">
+        <input
+          [(ngModel)]="question.answer3"
+          matInput
+          placeholder=" Wrong Answer"
+          name="answer3"
         />
       </mat-form-field>
 
