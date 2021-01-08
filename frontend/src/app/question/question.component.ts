@@ -1,6 +1,5 @@
 import { ApiService } from './../api.service';
 import { Component } from '@angular/core';
-import { identifierModuleUrl } from '@angular/compiler';
 
 @Component({
   selector: 'question',

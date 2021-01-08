@@ -1,4 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
 import { ApiService } from './api.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,9 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { QuestionsComponent } from './questions/questions.component';
 
 @NgModule({
-  declarations: [AppComponent, QuestionComponent],
+  declarations: [AppComponent, QuestionComponent, QuestionsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,6 +25,7 @@ import { MatCardModule } from '@angular/material/card';
     FormsModule,
     MatInputModule,
     HttpClientModule,
+    MatListModule,
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],

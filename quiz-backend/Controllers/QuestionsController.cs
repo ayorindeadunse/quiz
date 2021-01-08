@@ -40,6 +40,7 @@ namespace quiz_backend.Controllers
                 Answer1 = question.Answer1,
                 Answer2 = question.Answer2,
                 Answer3 = question.Answer3});*/
+            
             context.Questions.Add(question);
             context.SaveChanges();
         }
@@ -47,12 +48,14 @@ namespace quiz_backend.Controllers
         [HttpGet]
         public IEnumerable<Models.Question> Get()
         {
-            return new Models.Question[]
+            /*return new Models.Question[]
             {
                 new Models.Question() {Text = "hello"},
                 new Models.Question() { Text = "hi"}
                 
-            };
+            };*/
+             return context.Questions;
+           
         }
     }
 }
