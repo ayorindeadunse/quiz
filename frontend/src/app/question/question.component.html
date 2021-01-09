@@ -63,18 +63,18 @@
     <button
       mat-button
       color="primary"
-      *ngIf="question.id"
-      (click)="question = {}"
+      *ngIf="!question.id"
+      (click)="api.putQuestion(question)"
     >
-      NEW
+      POST
     </button>
     <button
       mat-button
       color="primary"
-      *ngIf="!question.id"
-      (click)="post(question)"
+      *ngIf="question.id"
+      (click)="question = {}"
     >
-      POST
+      NEW
     </button>
   </mat-card-actions>
 </mat-card>

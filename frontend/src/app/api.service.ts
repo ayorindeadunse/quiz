@@ -12,9 +12,17 @@ export class ApiService {
     return this.http.get('https://localhost:5001/api/questions');
   }
 
-  postQuestion(question) {
+  postQuestion(question: any) {
     this.http
       .post('https://localhost:5001/api/questions', question)
+      .subscribe((res) => {
+        //    console.log(res);
+      });
+  }
+
+  putQuestion(question: any) {
+    this.http
+      .put(`https://localhost:5001/api/questions/${question.id}`, question)
       .subscribe((res) => {
         //    console.log(res);
       });

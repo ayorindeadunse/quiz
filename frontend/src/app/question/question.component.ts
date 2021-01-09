@@ -22,7 +22,7 @@ export class QuestionComponent implements OnInit {
     );
   }
 
-  constructor(private api: ApiService) {}
+  constructor(public api: ApiService) {}
 
   post(question) {
     // console.log(question);
