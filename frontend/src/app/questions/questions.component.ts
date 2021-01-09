@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionsComponent implements OnInit {
   question = {
-    Text: '',
+    text: '',
     correctAnswer: '',
     answer1: '',
     answer2: '',
@@ -22,7 +22,7 @@ export class QuestionsComponent implements OnInit {
       //console.log(this.questions);
     });
   }
-  constructor(private api: ApiService) {}
+  constructor(public api: ApiService) {}
 
   post(question) {
     // console.log(question);
