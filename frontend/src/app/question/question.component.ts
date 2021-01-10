@@ -1,14 +1,28 @@
 import { ApiService } from './../api.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'question',
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css'],
 })
-export class QuestionComponent {
-  question = {};
-  constructor(private api: ApiService) {}
+export class QuestionComponent implements OnInit {
+  question = {
+    id: '',
+    text: '',
+    correctAnswer: '',
+    answer1: '',
+    answer2: '',
+    answer3: '',
+  };
+
+  ngOnInit() {
+    this.api.questionSelected.subscribe(
+      (question) => (this.question = question)
+    );
+  }
+
+  constructor(public api: ApiService) {}
 
   post(question) {
     // console.log(question);
