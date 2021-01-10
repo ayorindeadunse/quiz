@@ -1,15 +1,10 @@
 ﻿using System;
-using Microsoft.EntityFrameworkCore;
-
 namespace quiz_backend
 {
-    public class QuizContext : DbContext
+    public class QuizContext
     {
-        public QuizContext(DbContextOptions<QuizContext> options) : base(options) { }
-        
-            public DbSet<Models.Question> Questions { get; set; }  
-    
+        public QuizContext()
+        {
+        }
     }
-       
-    
 }
