@@ -1,3 +1,4 @@
+import { NavComponent } from './nav.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
@@ -15,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { QuestionsComponent } from './questions/questions.component';
 import { HomeComponent } from './home/home.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
@@ -28,6 +30,7 @@ const routes = [
     QuestionComponent,
     QuestionsComponent,
     HomeComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ const routes = [
     MatInputModule,
     HttpClientModule,
     MatListModule,
+    MatToolbarModule,
     RouterModule.forRoot(routes),
   ],
   providers: [ApiService],
