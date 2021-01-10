@@ -17,11 +17,13 @@ import { MatCardModule } from '@angular/material/card';
 import { QuestionsComponent } from './questions/questions.component';
 import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
   { path: 'questions', component: QuestionsComponent },
   { path: '', component: HomeComponent },
+  { path: 'quiz', component: QuizComponent },
 ];
 
 @NgModule({
@@ -31,6 +33,7 @@ const routes = [
     QuestionsComponent,
     HomeComponent,
     NavComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,
