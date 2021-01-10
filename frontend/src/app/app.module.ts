@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
 import { ApiService } from './api.service';
@@ -13,9 +14,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { QuestionsComponent } from './questions/questions.component';
+import { HomeComponent } from './home/home.component';
+
+const routes = [
+  { path: 'question', component: QuestionComponent },
+  { path: 'questions', component: QuestionsComponent },
+  { path: '', component: HomeComponent },
+];
 
 @NgModule({
-  declarations: [AppComponent, QuestionComponent, QuestionsComponent],
+  declarations: [
+    AppComponent,
+    QuestionComponent,
+    QuestionsComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +39,7 @@ import { QuestionsComponent } from './questions/questions.component';
     MatInputModule,
     HttpClientModule,
     MatListModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
