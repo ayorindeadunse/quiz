@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
   quiz = { id: 0, title: '' };
-  ngOnInit() {}
+  ngOnInit() {
+    this.api.quizSelected.subscribe((quiz) => (this.quiz = quiz));
+  }
 
   constructor(public api: ApiService) {}
 

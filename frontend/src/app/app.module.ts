@@ -18,6 +18,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { QuizComponent } from './quiz/quiz.component';
+import { QuizzesComponent } from './quizzes/quizzes.component';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
@@ -34,6 +35,7 @@ const routes = [
     HomeComponent,
     NavComponent,
     QuizComponent,
+    QuizzesComponent,
   ],
   imports: [
     BrowserModule,
