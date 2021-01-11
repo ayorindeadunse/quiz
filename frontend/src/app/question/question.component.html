@@ -57,14 +57,19 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button color="primary" *ngIf="question.id" (click)="(null)">
+    <button
+      mat-button
+      color="primary"
+      *ngIf="question.id"
+      (click)="api.putQuestion(question)"
+    >
       EDIT
     </button>
     <button
       mat-button
       color="primary"
       *ngIf="!question.id"
-      (click)="api.putQuestion(question)"
+      (click)="api.postQuestion(question)"
     >
       POST
     </button>
@@ -78,3 +83,4 @@
     </button>
   </mat-card-actions>
 </mat-card>
+<questions></questions>

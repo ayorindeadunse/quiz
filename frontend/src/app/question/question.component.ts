@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
   question = {
-    id: '',
+    id: 0,
     text: '',
     correctAnswer: '',
     answer1: '',

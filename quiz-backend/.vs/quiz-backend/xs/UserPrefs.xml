@@ -6,7 +6,6 @@
       <File FileName="Controllers/QuizzesController.cs" Line="97" Column="1" />
       <File FileName="Startup.cs" />
       <File FileName="Models/Quiz.cs" />
-      <File FileName="QuizContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

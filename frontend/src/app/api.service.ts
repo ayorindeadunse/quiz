@@ -22,7 +22,7 @@ export class ApiService {
     this.http
       .post('https://localhost:5001/api/questions', question)
       .subscribe((res) => {
-        //    console.log(res);
+        console.log(res);
       });
   }
 
@@ -30,7 +30,7 @@ export class ApiService {
     this.http
       .put(`https://localhost:5001/api/questions/${question.id}`, question)
       .subscribe((res) => {
-        //    console.log(res);
+        console.log(res);
       });
   }
 
@@ -46,7 +46,7 @@ export class ApiService {
     this.http
       .put(`https://localhost:5001/api/quizzes/${quiz.id}`, quiz)
       .subscribe((res) => {
-        //    console.log(res);
+        console.log(res);
       });
   }
   selectQuestion(question: any) {
