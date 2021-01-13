@@ -11,8 +11,8 @@ export class ApiService {
   quizSelected = this.selectedQuiz.asObservable();
 
   constructor(private http: HttpClient) {}
-  getQuestions() {
-    return this.http.get('https://localhost:5001/api/questions');
+  getQuestions(quizId) {
+    return this.http.get(`https://localhost:5001/api/questions/${quizId}`);
   }
 
   getQuizzes() {
@@ -22,6 +22,7 @@ export class ApiService {
     this.http
       .post('https://localhost:5001/api/questions', question)
       .subscribe((res) => {
+        //  console.log('question object sent:', question);
         console.log(res);
       });
   }

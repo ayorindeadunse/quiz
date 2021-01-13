@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{E4034190-DFE5-4D88-BCFE-DC3AAFFB4C82}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/QuizzesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/QuestionsController.cs">
     <Files>
-      <File FileName="Models/Question.cs" Line="1" Column="1" />
-      <File FileName="Controllers/QuestionsController.cs" />
-      <File FileName="Controllers/QuizzesController.cs" Line="97" Column="1" />
+      <File FileName="Models/Question.cs" Line="13" Column="19" />
+      <File FileName="Controllers/QuestionsController.cs" Line="52" Column="10" />
+      <File FileName="Controllers/QuizzesController.cs" />
       <File FileName="Startup.cs" />
       <File FileName="Models/Quiz.cs" />
     </Files>
@@ -14,7 +14,7 @@
             <Node name="quiz-backend" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
-                <Node name="QuizzesController.cs" selected="True" />
+                <Node name="QuestionsController.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
             </Node>

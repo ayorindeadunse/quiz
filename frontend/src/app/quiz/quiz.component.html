@@ -29,7 +29,12 @@
     <button mat-button color="primary" *ngIf="quiz.id" (click)="quiz = {}">
       NEW
     </button>
-    <button mat-button color="primary" *ngIf="quiz.id" routerLink="/question">
+    <button
+      mat-button
+      color="primary"
+      *ngIf="quiz.id"
+      [routerLink]="['/question', quiz.id]"
+    >
       EDIT QUESTIONS
     </button>
     <button mat-button color="primary" *ngIf="!quiz.id" (click)="post(quiz)">
