@@ -1,9 +1,13 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
 namespace quiz_backend
 {
-    public class UserDbContext
+    public class UserDbContext : IdentityDbContext<IdentityUser>
     {
-        public UserDbContext()
+        public UserDbContext(DbContextOptions<UserDbContext> options) : base(options)
         {
         }
     }

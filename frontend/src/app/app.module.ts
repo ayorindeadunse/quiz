@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { QuizComponent } from './quiz/quiz.component';
 import { QuizzesComponent } from './quizzes/quizzes.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
@@ -26,6 +27,10 @@ const routes = [
   { path: 'questions', component: QuestionsComponent },
   { path: '', component: HomeComponent },
   { path: 'quiz', component: QuizComponent },
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
 ];
 
 @NgModule({
@@ -37,6 +42,7 @@ const routes = [
     NavComponent,
     QuizComponent,
     QuizzesComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

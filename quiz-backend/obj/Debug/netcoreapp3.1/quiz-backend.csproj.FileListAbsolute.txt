@@ -146,3 +146,12 @@
 /Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/System.Reflection.Metadata.dll
 /Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
