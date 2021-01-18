@@ -1,5 +1,6 @@
-import { ApiService } from './../api.service';
+import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'register',
@@ -7,10 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
-  constructor(public api: ApiService) {}
-
-  /* post(quiz) {
-    // console.log(question);
-    this.api.postQuiz(quiz);
-  }*/
+  form;
+  constructor(public auth: AuthService, private fb: FormBuilder) {
+    this.form = fb.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required],
+    });
+  }
+  register() {
+    console.log(this.form);
+  }
 }

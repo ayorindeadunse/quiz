@@ -1,3 +1,4 @@
+import { AuthService } from './auth.service';
 import { NavComponent } from './nav.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -9,7 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatInputModule } from '@angular/material/input';
@@ -55,9 +56,10 @@ const routes = [
     HttpClientModule,
     MatListModule,
     MatToolbarModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [ApiService],
+  providers: [ApiService, AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
