@@ -1,7 +1,8 @@
+import { AuthInterceptor } from './auth.interceptor';
 import { AuthService } from './auth.service';
 import { NavComponent } from './nav.component';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MatListModule } from '@angular/material/list';
 import { ApiService } from './api.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,6 +22,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { QuizComponent } from './quiz/quiz.component';
 import { QuizzesComponent } from './quizzes/quizzes.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
@@ -31,6 +33,10 @@ const routes = [
   {
     path: 'register',
     component: RegisterComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
 ];
 
@@ -44,6 +50,7 @@ const routes = [
     QuizComponent,
     QuizzesComponent,
     RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +66,15 @@ const routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [ApiService, AuthService],
+  providers: [
+    ApiService,
+    AuthService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true, // this specifies that we can use multiple http interceptors
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

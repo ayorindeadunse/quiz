@@ -1,21 +1,22 @@
 ﻿<Properties StartupConfiguration="{E4034190-DFE5-4D88-BCFE-DC3AAFFB4C82}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Question.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
       <File FileName="Models/Question.cs" Line="13" Column="19" />
       <File FileName="Controllers/QuestionsController.cs" />
       <File FileName="Controllers/QuizzesController.cs" />
-      <File FileName="Startup.cs" />
+      <File FileName="Startup.cs" Line="40" Column="1" />
       <File FileName="Models/Quiz.cs" />
       <File FileName="Controllers/AccountController.cs" />
+      <File FileName="QuizContext.cs" />
+      <File FileName="Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="quiz-backend" expanded="True">
             <Node name="quiz-backend" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Question.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

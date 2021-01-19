@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
 
 namespace quiz_backend
 {
@@ -34,8 +36,31 @@ namespace quiz_backend
             //configure context
             services.AddDbContext<QuizContext>(opt => opt.UseInMemoryDatabase("quiz"));
             services.AddDbContext<UserDbContext>(opt => opt.UseInMemoryDatabase("user"));
+
+
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<UserDbContext>();
 
+            var signingKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(Encoding.UTF8.GetBytes("This is the secret phase"));
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme =
+                JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+            }).AddJwtBearer(cfg =>
+            {
+                cfg.RequireHttpsMetadata = false;
+                cfg.SaveToken = true;
+                cfg.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    IssuerSigningKey = signingKey,
+                    ValidateAudience = false,//
+                    ValidateIssuer = false,//
+                    ValidateLifetime = false,//all set to false to demonstrate the process of jwt authentication working quickly. In a production environment, the validateIssuer and validate Lifetime properties are important security features.
+                    ValidateIssuerSigningKey = true
+
+                };
+            });
 
             services.AddControllers();
         }
@@ -43,6 +68,7 @@ namespace quiz_backend
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseAuthentication();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -1,3 +1,4 @@
+import { AuthService } from './auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   // title = 'frontend app with asp.net core and angular.';
+  constructor(public auth: AuthService) {}
 }

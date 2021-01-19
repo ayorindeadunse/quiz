@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "oaoV+N0ystbXK962BVGsdRaOZunUBmb8eisVtDb28v6SGnyf12At1tLr9cDgbRglMYP2HtYq1OhrPvLbgk2ZIQ==",
+  "dgSpecHash": "WMdNVq32epI+m/Vok4MshDSPaB08IwMs3On6dXmlJ8fIn7rB1PadELvVis0WmPH8P/0Jq6vxoz20bzMfCyW8Kg==",
   "success": true,
   "projectFilePath": "/Users/ayorindeadunse/quiz/quiz-backend/quiz-backend.csproj",
   "expectedPackageFiles": [
     "/Users/ayorindeadunse/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
+    "/Users/ayorindeadunse/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.11/microsoft.aspnetcore.authentication.jwtbearer.3.1.11.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.11/microsoft.aspnetcore.cryptography.internal.3.1.11.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.11/microsoft.aspnetcore.cryptography.keyderivation.3.1.11.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -47,6 +48,8 @@
     "/Users/ayorindeadunse/.nuget/packages/microsoft.identity.client/3.0.8/microsoft.identity.client.3.0.8.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.8.0/microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.identitymodel.logging/6.8.0/microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "/Users/ayorindeadunse/.nuget/packages/microsoft.identitymodel.protocols/5.5.0/microsoft.identitymodel.protocols.5.5.0.nupkg.sha512",
+    "/Users/ayorindeadunse/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/5.5.0/microsoft.identitymodel.protocols.openidconnect.5.5.0.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.identitymodel.tokens/6.8.0/microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "/Users/ayorindeadunse/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

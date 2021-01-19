@@ -155,3 +155,6 @@
 /Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
 /Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/ayorindeadunse/quiz/quiz-backend/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
