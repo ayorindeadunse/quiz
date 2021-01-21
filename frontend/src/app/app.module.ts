@@ -13,6 +13,9 @@ import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
@@ -24,6 +27,8 @@ import { QuizzesComponent } from './quizzes/quizzes.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { PlayComponent } from './play/play.component';
+import { PlayQuizComponent } from './play-quiz/play-quiz.component';
+import { FinishedComponent } from './finished/finished.component';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
@@ -43,6 +48,10 @@ const routes = [
     path: 'play',
     component: PlayComponent,
   },
+  {
+    path: 'playQuiz/:quizId',
+    component: PlayQuizComponent,
+  },
 ];
 
 @NgModule({
@@ -57,6 +66,8 @@ const routes = [
     RegisterComponent,
     LoginComponent,
     PlayComponent,
+    PlayQuizComponent,
+    FinishedComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,6 +81,9 @@ const routes = [
     MatListModule,
     MatToolbarModule,
     ReactiveFormsModule,
+    MatExpansionModule,
+    MatRadioModule,
+    MatDialogModule,
     RouterModule.forRoot(routes),
   ],
   providers: [
@@ -82,5 +96,6 @@ const routes = [
     },
   ],
   bootstrap: [AppComponent],
+  entryComponents: [FinishedComponent],
 })
 export class AppModule {}

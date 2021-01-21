@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PlayComponent implements OnInit {
   constructor(public api: ApiService) {}
 
-  quizzes: any;
+  quizzes: any = [];
 
   ngOnInit() {
     this.api.getAllQuizzes().subscribe((res) => {
