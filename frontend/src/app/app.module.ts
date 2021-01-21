@@ -23,6 +23,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { QuizzesComponent } from './quizzes/quizzes.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { PlayComponent } from './play/play.component';
 
 const routes = [
   { path: 'question', component: QuestionComponent },
@@ -38,6 +39,10 @@ const routes = [
     path: 'login',
     component: LoginComponent,
   },
+  {
+    path: 'play',
+    component: PlayComponent,
+  },
 ];
 
 @NgModule({
@@ -51,6 +56,7 @@ const routes = [
     QuizzesComponent,
     RegisterComponent,
     LoginComponent,
+    PlayComponent,
   ],
   imports: [
     BrowserModule,

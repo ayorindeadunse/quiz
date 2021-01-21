@@ -18,6 +18,11 @@ export class ApiService {
   getQuizzes() {
     return this.http.get('https://localhost:5001/api/quizzes');
   }
+
+  getAllQuizzes() {
+    return this.http.get('https://localhost:5001/api/quizzes/all');
+  }
+
   postQuestion(question: any) {
     this.http
       .post('https://localhost:5001/api/questions', question)
